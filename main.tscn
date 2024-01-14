@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgdi2fcsgau8a"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_wcn68"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_wcn68")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_right = 1150.0
+offset_bottom = 646.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+bbcode_enabled = true
+text = "[center]Look at output debugger as it displays the contents of the array on _ready()
+Use \"N\" to create a new node. In 5 seconds it will free
+Use \"C\" to run clear() on the internal array of the current nodes in the scene
+
+Notice how the output after clearing and upon creating a new node shows an empty array
+
+clear() seems to clear the exported array for the preloaded scene instead of just the existing node
+
+Setting the array to empty \"[]\" will remove the contents of the array but only for that node, which is what should be expected for clear() as well"
